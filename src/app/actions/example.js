@@ -1,4 +1,5 @@
 
+import { ExampleService } from '../service'
 import * as ActionTypye from './ActionTypes'
 
 export const login = param => {
@@ -8,5 +9,16 @@ export const login = param => {
         if (user == 'demo' && pass == '123456')
             dispatch({ type: ActionTypye.EXAMPLE_SUCCESS, data: list })
         else dispatch({ type: ActionTypye.EXAMPLE_FAIL, data: 'Error' })
+    }
+}
+
+export const handleLogin = param => {
+    return (dispatch) => {
+        ExampleService.login(param).then(data => {
+            if (data.result == 'success')
+                dispatch({ type: ActionTypye.EXAMPLE_SUCCESS, data })
+            else dispatch({ type: ActionTypye.EXAMPLE_FAIL, data })
+        })
+
     }
 }
