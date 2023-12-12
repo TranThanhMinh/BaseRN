@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import Color from "../../common/Color";
 
 
 const  style = StyleSheet.create({
@@ -7,7 +8,7 @@ const  style = StyleSheet.create({
     backgroundColor:'white',
     justifyContent:'center',
     alignItems:'center',
-    marginHorizontal:10
+    paddingHorizontal:10
    },
    input:{
     width:'100%',
@@ -17,6 +18,13 @@ const  style = StyleSheet.create({
     borderWidth:1,
     paddingHorizontal:5,
     marginVertical:5
+   },
+   btnLogin:{
+    paddingVertical:5,
+    paddingHorizontal:10,
+    borderColor:Color.blue,
+    borderWidth:1,
+    borderRadius:5
    }
 })
 

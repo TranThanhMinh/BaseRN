@@ -36,9 +36,9 @@ const Login = (props) => {
     return (
         <View style={[style.container, { top: insets.top }]}>
             <TextInput style={style.input} placeholder="user name" text={username} onChangeText={text => setUserName(text)} />
-            <TextInput style={style.input} placeholder="user name" text={pass} onChangeText={text => setPass(text)} />
+            <TextInput style={style.input} placeholder="user name" text={pass} onChangeText={text => setPass(text)} secureTextEntry={true}/>
             <TouchableOpacity onPress={() => dispatch(login({user:username,pass:pass}))}>
-                <Text>Login</Text>
+                <Text style={style.btnLogin}>Login</Text>
             </TouchableOpacity>
 
         </View>

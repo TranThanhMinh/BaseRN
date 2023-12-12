@@ -22,7 +22,7 @@ function AppStack(props) {
 
   return (
     <NavigationContainer ref={props.navigationRef}>
-      <Stack.Navigator initialRouteName="Home"
+      <Stack.Navigator initialRouteName="Login"
         screenOptions={{
           headerBackTitleVisible: false,
           ...defaultOptions,

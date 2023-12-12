@@ -7,7 +7,7 @@ const  style = StyleSheet.create({
     backgroundColor:'white',
     justifyContent:'center',
     alignItems:'center',
-    marginHorizontal:10
+    paddingHorizontal:10
    },
    input:{
     width:'100%',
