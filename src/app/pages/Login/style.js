@@ -13,15 +13,15 @@ const  style = StyleSheet.create({
    input:{
     width:'100%',
     height:45,
+    paddingHorizontal:10,
     borderColor:'red',
     borderRadius:10,
     borderWidth:1,
-    paddingHorizontal:5,
     marginVertical:5
    },
    btnLogin:{
     paddingVertical:5,
-    paddingHorizontal:10,
+    paddingHorizontal:20,
     borderColor:Color.blue,
     borderWidth:1,
     borderRadius:5

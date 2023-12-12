@@ -6,5 +6,10 @@ class Services {
   static login(params) {
     return Base.post(Api.LOGIN, params)
   }
+
+  static getEmployees(params) {
+    return Base.post(Api.Employees, params)
+  }
 }
+
 export default Services

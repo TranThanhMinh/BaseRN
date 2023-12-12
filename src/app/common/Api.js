@@ -3,6 +3,7 @@ export const BASE_API = Domain.API_SERVER;
 export const DOMAIN_API = BASE_API + '/';
 
 
-export const LOGIN = DOMAIN_API + 'login'
+export const LOGIN = DOMAIN_API + 'login' 
+export const Employees = DOMAIN_API + 'employees' 
 
 

@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { CardStyleInterpolators } from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen'
 import HomeScreen from './screens/HomeScreen'
+import Constants from '../common/Constants';
 
 const Stack = createStackNavigator();
 
@@ -28,8 +29,8 @@ function AppStack(props) {
           ...defaultOptions,
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}>
-        <Stack.Screen name={'Login'} options={{ headerShown: false }} component={LoginScreen} />     
-        <Stack.Screen name={'Home'} options={{ headerShown: false }}  component={HomeScreen} />
+        <Stack.Screen name={Constants.Screen.Login} options={{ headerShown: false }} component={LoginScreen} />     
+        <Stack.Screen name={Constants.Screen.Home} options={{ headerShown: false }}  component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

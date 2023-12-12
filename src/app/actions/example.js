@@ -1,4 +1,5 @@
 
+import { result } from 'lodash'
 import { ExampleService } from '../service'
 import * as ActionTypye from './ActionTypes'
 
@@ -22,3 +23,13 @@ export const handleLogin = param => {
 
     }
 }
+
+export const getEmployees = param => {
+    return (dispatch) => {
+        ExampleService.getEmployees(param).then(data => {
+            console.log('getEmployees',result)
+        })
+
+    }
+}
+

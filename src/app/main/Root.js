@@ -12,9 +12,9 @@ const Root = () => {
   const navigationRef = useRef();
   return (
     <Provider store={store}>
-    <SafeAreaProvider>
-    <Router navigationRef={navigationRef} />
-    </SafeAreaProvider>
+      <SafeAreaProvider>
+        <Router navigationRef={navigationRef} />
+      </SafeAreaProvider>
     </Provider>
   )
 };
