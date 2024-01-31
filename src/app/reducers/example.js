@@ -4,6 +4,7 @@ import { Keyboard } from 'react-native'
 export default function base(state = {}, action) {
   switch (action.type) {
     case ActionTypes.EXAMPLE_PENDING:
+    case ActionTypes.EMPLOYEES_PENDING:
       {
         return {
           ...state,
@@ -14,6 +15,7 @@ export default function base(state = {}, action) {
       }
 
     case ActionTypes.EXAMPLE_FAIL:
+    case ActionTypes.EMPLOYEES_FAIL:
 
       {
         return {
@@ -25,6 +27,7 @@ export default function base(state = {}, action) {
       }
 
     case ActionTypes.EXAMPLE_SUCCESS:
+    case ActionTypes.EMPLOYEES_SUCCESS:
 
       {
         return {

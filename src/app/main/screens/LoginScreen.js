@@ -5,7 +5,7 @@ import { Login } from "../../pages";
 const LoginScreen =({navigation})=>{
     return(
       <Login
-       goToHome={()=>navigation.navigate('Home')}/>
+       goToHome={(item)=>navigation.navigate('Home',{item:item})}/>
     )
 }
 

@@ -22,8 +22,7 @@ const Login = (props) => {
                 break;
             case ActionTypes.EXAMPLE_SUCCESS:
                 console.log('EXAMPLE_SUCCESS',data)
-
-                props.goToHome()
+                props.goToHome(data)
 
                 break;
             case ActionTypes.EXAMPLE_FAIL:

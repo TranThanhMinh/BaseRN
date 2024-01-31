@@ -2,10 +2,12 @@ import React from "react";
 import { Home } from "../../pages";
 
 
-const HomeScreen =({navigation})=>{
+const HomeScreen =({navigation,route})=>{
+  const { item } = route.params
     return(
       <Home 
-      goBack ={()=>navigation.goBack()}/>
+      goBack ={()=>navigation.goBack()}
+      item ={item}/>
     )
 }
 
